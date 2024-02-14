@@ -1,0 +1,70 @@
+﻿# A5:ER FORMAT:13
+# A5:ER ENCODING:UTF8
+# A5:ER Mk-1 Copyright (C)2007 m.matsubara
+# A5:SQL Mk-2 Copyright (C)1997 m.matsubara
+#  http://www.wind.sannet.ne.jp/m_matsu/developer/a5m2/
+
+[Manager]
+ProjectName=
+Author=
+MaxEntityRowShow=1000
+ReadOnlyRecommend=0
+Page=Main
+PageInfo="Main",2,"A3Landscape",$FFFFFF
+LogicalView=0
+DecodeDomain=0
+ViewModePageIndividually=1
+ViewMode=2
+ViewFormat=0
+UseNondependenceDashLine=0
+FontName=Tahoma
+FontSize=10
+PaperSize=A4Landscape
+HeaderLeft=
+HeaderCenter=
+HeaderRight=
+FooterLeft=
+FooterCenter=
+FooterRight=
+ShowPageoutRelation=1
+DefaultPkName=%0:s_PKC
+DefaultPkIndexName=%0:s_PKI
+DefaultIndexName=%0:s_IX%1:d
+DefaultFkName=%0:s_FK%1:d
+SqlSeparator=0
+ShowTag=1
+ShowCommonAttributes=0
+
+[Entity]
+PName=t_user
+LName=t_user
+Comment=
+TableOption=
+Page=MAIN
+Left=250
+Top=100
+Field="company_id","company_id","varchar(6)","NOT NULL",0,"","",$FFFFFFFF,""
+Field="login_id","login_id","varchar(20)","NOT NULL",,"","",$FFFFFFFF,""
+Field="pwd","pwd","varchar(20)","NOT NULL",,"","",$FFFFFFFF,""
+Field="account_lock_flg","account_lock_flg","tinyint(4)","NOT NULL",,"0","",$FFFFFFFF,""
+Field="employee_id","employee_id","varchar(6)","NOT NULL",1,"","",$FFFFFFFF,""
+Field="name","name","varchar(50)","NOT NULL",,"","",$FFFFFFFF,""
+Field="sex","sex","tinyint(4)","NOT NULL",,"1","",$FFFFFFFF,""
+Field="join_date","join_date","datetime","NOT NULL",,"","",$FFFFFFFF,""
+Field="birthday","birthday","datetime","NOT NULL",,"","",$FFFFFFFF,""
+Field="contact","contact","varchar(100)",,,"","",$FFFFFFFF,""
+Field="address","address","varchar(100)",,,"","",$FFFFFFFF,""
+Field="post_code","post_code","varchar(10)",,,"","",$FFFFFFFF,""
+Field="level","level","tinyint(4)","NOT NULL",,"0","",$FFFFFFFF,""
+Field="retirement_date","retirement_date","datetime",,,"","",$FFFFFFFF,""
+Field="last_login","last_login","datetime",,,"","",$FFFFFFFF,""
+Field="registered_date","registered_date","datetime","NOT NULL",,"","",$FFFFFFFF,""
+Field="registered_employee_id","registered_employee_id","varchar(6)","NOT NULL",,"","",$FFFFFFFF,""
+Field="update_date","update_date","datetime","NOT NULL",,"","",$FFFFFFFF,""
+Field="update_employee_id","update_employee_id","varchar(6)","NOT NULL",,"","",$FFFFFFFF,""
+Index=login_id_UNIQUE=2,login_id
+EffectMode=None
+Color=$000000
+BkColor=$FFFFFF
+Position="MAIN",250,100
+ZOrder=0

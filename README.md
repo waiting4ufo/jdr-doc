@@ -1,2 +1,0 @@
-# jdr-doc
-document
